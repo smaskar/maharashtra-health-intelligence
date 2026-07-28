@@ -1,12 +1,12 @@
 {
-  "period":"LAST 24 HOURS UPDATE – 28 JULY 2026, CURRENT MONITORING WINDOW",
+  "period":"LAST 24 HOURS UPDATE – 28 JULY 2026, 09:20 PM IST",
   "kpis":[
     {"label":"DISTRICT HOSPITALS","value":"36","status":"MONITORING","note":"No verified statewide disruption"},
     {"label":"SUB-DISTRICT / RURAL HOSPITALS","value":"22","status":"MONITORING","note":"District inputs awaited"},
     {"label":"PHCs / UPHCs / CHCs / HWCs","value":"58","status":"MONITORING","note":"No major statewide issue verified"},
     {"label":"108 EMERGENCY AMBULANCE","value":"OPERATIONAL","status":"OPERATIONAL","note":"Satara local route watch"},
     {"label":"104 HEALTH HELPLINE","value":"OPERATIONAL","status":"OPERATIONAL","note":"No major disruption verified"},
-    {"label":"102 MATERNAL TRANSPORT","value":"OPERATIONAL","status":"OPERATIONAL","note":"No major disruption verified"}
+    {"label":"102 MATERNAL TRANSPORT","value":"OPERATIONAL","status":"OPERATIONAL","note":"Operational outside Mumbai"}
   ],
   "districts":[
     {"district":"Amravati","risk":"Critical","issue":"Melghat ashram-school food poisoning; central kitchen closed; investigation continuing","trend":"↑"},
@@ -16,9 +16,9 @@
     {"district":"Mumbai","risk":"Medium","issue":"SevenHills Hospital infrastructure / PPP development watch","trend":"→"},
     {"district":"Raigad","risk":"Medium","issue":"Heavy-rain and local access monitoring","trend":"→"},
     {"district":"Ratnagiri","risk":"Medium","issue":"Heavy-rain and low-lying-area watch","trend":"→"},
+    {"district":"Sindhudurg","risk":"Low","issue":"Kudal facility procurement notices published for basic equipment","trend":"↑"},
     {"district":"Nandurbar","risk":"Low","issue":"Tribal-hostel food-safety recurrence monitoring","trend":"→"},
-    {"district":"Nagpur","risk":"Low","issue":"No significant verified signal","trend":"↓"},
-    {"district":"Nashik","risk":"Low","issue":"No significant verified signal","trend":"→"}
+    {"district":"Nashik","risk":"Low","issue":"District PHC directory updated; no significant adverse signal","trend":"→"}
   ],
   "alerts":[
     {"district":"Amravati (Melghat)","title":"Food Poisoning Cluster","severity":"Critical","summary":"Ashram-school food-poisoning cluster; Tembhli central kitchen reportedly closed and police action initiated.","action":"Consolidate patient line list, laboratory reports, supplier compliance and preventive inspections.","source":"Marathi media / public reports","time":"Current monitoring"},
@@ -28,14 +28,14 @@
   "midPanels":[
     {"title":"DISEASE OUTBREAKS","rows":[{"label":"Food poisoning – Amravati","status":"Active cluster"},{"label":"Other outbreaks","status":"No verified statewide signal"}]},
     {"title":"WEATHER & DISASTER IMPACT","rows":[{"label":"Satara – Kelghar Ghat","status":"Road access risk"},{"label":"Raigad / Ratnagiri","status":"Heavy-rain watch"}]},
-    {"title":"MEDICINE & EQUIPMENT STATUS","rows":[{"label":"Critical medicine shortage","status":"Not verified"},{"label":"Major equipment downtime","status":"Not verified"}]},
+    {"title":"MEDICINE & EQUIPMENT STATUS","rows":[{"label":"Critical medicine shortage","status":"Not verified"},{"label":"Kudal basic equipment procurement","status":"Official quotations open"}]},
     {"title":"HR STATUS","rows":[{"label":"Doctors","status":"No statewide shortage verified"},{"label":"Nursing / paramedical","status":"Monitor locally"}]},
-    {"title":"102 / 104 / 108 STATUS","rows":[{"label":"102 Maternal Transport","status":"Operational"},{"label":"104 Health Helpline","status":"Operational"},{"label":"108 Emergency Ambulance","status":"Operational"}]}
+    {"title":"102 / 104 / 108 STATUS","rows":[{"label":"102 Maternal Transport","status":"Operational outside Mumbai"},{"label":"104 Health Helpline","status":"Operational"},{"label":"108 Emergency Ambulance","status":"Operational"}]}
   ],
-  "tenders":["District-level medical-equipment tenders under monitoring","Hospital renovation and diagnostic procurement opportunities","Verify all tender notices against official portals before circulation"],
-  "funding":["PM-ABHIM digital-health and infrastructure opportunities","AB-PMJAY infrastructure support opportunities","NCD and public-health strengthening windows"],
-  "positive":["Maha Arogya Shibir and health-camp activity across districts","Specialist OPDs, screening and blood-donation initiatives","Opportunity to integrate public-hospital star-rating indicators"],
-  "topics":["Food safety","Hospital staff safety","Road closure and ambulance access","Health camps and services"],
+  "tenders":["Official NHM quotations published for All-in-One PC at Kudal","Official NHM quotation published for refrigerator at Kudal","Official NHM quotation published for water dispenser at Kudal"],
+  "funding":["Mukhyamantri Rugna Mitra portal offers a digital hospital and blood-bank discovery layer","PM-ABHIM digital-health and infrastructure opportunities","AB-PMJAY infrastructure support opportunities"],
+  "positive":["Mukhyamantri Rugna Mitra public portal is available for nearby hospital and blood-bank search","Maha Arogya Shibir and health-camp activity across districts","Public-hospital star-rating framework creates an auditable quality-improvement opportunity"],
+  "topics":["Food safety","Hospital staff safety","Road closure and ambulance access","Digital patient navigation","Kudal procurement"],
   "sentiment":{"positive":62,"neutral":26,"negative":12},
-  "actions":["Review Melghat food-poisoning investigation and prevention","Confirm Satara diversion routes and referral continuity","Review hospital staff-safety SOPs after Dombivli case","Obtain Aundh Hospital corrective-action status","Ensure uninterrupted 102, 104 and 108 during monsoon"]
+  "actions":["Review Melghat food-poisoning investigation and prevention","Confirm Satara diversion routes and referral continuity","Review hospital staff-safety SOPs after Dombivli case","Assess integration of Mukhyamantri Rugna Mitra with the state digital-health dashboard","Track Kudal quotations through award and delivery","Ensure uninterrupted 102, 104 and 108 during monsoon"]
 }
