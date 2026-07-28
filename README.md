@@ -1,17 +1,17 @@
-# Maharashtra Health Intelligence
+# NHM Maharashtra Health Situation Dashboard
 
-A Marathi-first public health situation dashboard for Maharashtra.
+Commissioner-style public health situation dashboard for Maharashtra.
 
-## Important
+## Live site
 
-- `data/dashboard.json` contains reviewed, executive-facing items.
-- `data/review_queue.json` is automatically collected public news and must **not** be treated as verified.
-- The scheduled workflow refreshes the review queue every three hours.
-- Human verification is required before moving any item into the dashboard.
+`https://smaskar.github.io/nhm/`
 
-## Publish
+## Structure
 
-1. In **Settings → Pages**, select **GitHub Actions** as the source.
-2. Run the `Deploy dashboard to GitHub Pages` workflow.
+- `index.html` – dashboard layout
+- `assets/styles.css` – approved visual design
+- `assets/app.js` – JSON rendering logic
+- `data/dashboard.json` – current reviewed dashboard data
+- `.github/workflows/pages.yml` – GitHub Pages deployment
 
-Expected URL: `https://smaskar.github.io/maharashtra-health-intelligence/`
+Only reviewed information should be placed in `data/dashboard.json`. Unverified public claims must remain outside the executive dashboard.
