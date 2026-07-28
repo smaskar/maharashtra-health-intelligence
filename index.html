@@ -1,37 +1,18 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>NHM Maharashtra Health Intelligence</title>
-  <link rel="stylesheet" href="assets/styles.css" />
-</head>
-<body>
-<header class="topbar">
-  <div>
-    <h1>NHM Maharashtra – Health Situation Dashboard</h1>
-    <p>Public Health Department & Family Welfare · Marathi-first intelligence</p>
-  </div>
-  <div class="timestamp" id="generatedAt">Loading…</div>
-</header>
-<main>
-  <section class="summary-grid" id="summaryGrid"></section>
-  <section class="panel">
-    <div class="panel-head"><h2>Major Operational Alerts</h2><div class="filters"><select id="severityFilter"><option value="all">All severity</option><option>Critical</option><option>High</option><option>Medium</option><option>Low</option></select><select id="districtFilter"><option value="all">All districts</option></select></div></div>
-    <div id="alerts" class="cards"></div>
-  </section>
-  <section class="two-col">
-    <div class="panel"><h2>Top Districts Requiring Attention</h2><div id="districts"></div></div>
-    <div class="panel"><h2>Program & Service Status</h2><div id="services"></div></div>
-  </section>
-  <section class="two-col">
-    <div class="panel"><h2>Hospital / PHC Watchlist</h2><div id="facilities"></div></div>
-    <div class="panel"><h2>Positive Initiatives & Opportunities</h2><div id="opportunities"></div></div>
-  </section>
-  <section class="panel"><h2>Commissioner’s Priority Actions</h2><ol id="actions" class="actions"></ol></section>
-  <section class="panel sources"><h2>Sources & Verification</h2><p>Only public, searchable sources are displayed. Each item is labelled Verified, Credible Report, or Unverified Public Claim. Click the source link to review the original publication.</p></section>
-</main>
-<footer>Situational awareness only · Automated collection requires human verification before executive escalation.</footer>
-<script src="assets/app.js"></script>
-</body>
-</html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NHM Maharashtra Health Situation Dashboard</title><link rel="stylesheet" href="assets/styles.css"></head><body>
+<header class="hero"><div class="brand left"><div class="seal">NHM</div></div><div class="hero-copy"><h1>NHM MAHARASHTRA – HEALTH SITUATION DASHBOARD</h1><p id="period">LAST 24 HOURS UPDATE</p></div><div class="brand right"><div class="emblem">महाराष्ट्र शासन</div><small>सार्वजनिक आरोग्य विभाग<br>Public Health Department</small></div></header>
+<main class="dashboard">
+<section id="kpis" class="kpi-grid"></section>
+<section class="top-grid">
+  <article class="panel map-panel"><h2>DISTRICT HEAT MAP <span>(Risk Level – Last 24 Hrs)</span></h2><div class="map-wrap"><svg viewBox="0 0 460 420" class="mh-map" aria-label="Maharashtra risk map"><path class="map-base" d="M62 70 L130 40 L205 54 L260 44 L330 75 L395 116 L380 168 L410 215 L365 250 L355 318 L296 346 L230 330 L198 378 L150 350 L123 294 L74 250 L85 204 L50 158 Z"/><circle class="risk critical" cx="250" cy="95" r="22"/><text x="250" y="100">Amravati</text><circle class="risk high" cx="155" cy="270" r="20"/><text x="155" y="275">Satara</text><circle class="risk high" cx="92" cy="178" r="18"/><text x="92" y="183">Thane</text><circle class="risk medium" cx="135" cy="215" r="15"/><text x="135" y="220">Pune</text></svg><div id="legend" class="legend"></div></div><p class="source">Source: Public reports, district monitoring and verified media</p></article>
+  <article class="panel"><h2>TOP 10 DISTRICTS REQUIRING ATTENTION</h2><div class="table-wrap"><table><thead><tr><th>Rank</th><th>District</th><th>Risk</th><th>Key issue</th><th>Trend</th></tr></thead><tbody id="districtRows"></tbody></table></div></article>
+  <article class="panel alerts-panel"><h2>MAJOR OPERATIONAL ALERTS <span>(Last 24 Hrs)</span></h2><div id="alerts"></div><div class="alert-total" id="alertTotal"></div></article>
+</section>
+<section class="mid-grid" id="midPanels"></section>
+<section class="bottom-grid">
+  <article class="panel"><h2>NEW TENDERS / PROCUREMENT</h2><ul id="tenders"></ul></article>
+  <article class="panel"><h2>FUNDING & PROJECT OPPORTUNITIES</h2><ul id="funding"></ul></article>
+  <article class="panel"><h2>POSITIVE INITIATIVES / ACHIEVEMENTS</h2><ul id="positive"></ul></article>
+  <article class="panel sentiment"><h2>PUBLIC SENTIMENT <span>(Social Media Trends)</span></h2><div class="sentiment-wrap"><div class="gauge"><div class="score" id="positiveScore">62%</div><small>Positive</small></div><div class="sentiment-numbers"><b>26%</b><span>Neutral</span><b>12%</b><span>Negative</span></div></div><div class="topics" id="topics"></div></article>
+</section>
+<section class="actions-strip"><h2>KEY ACTIONS FOR COMMISSIONER</h2><div id="actions" class="actions-grid"></div><div class="data-status"><b>DATA STATUS</b><small>Public-source intelligence; verification status shown item-wise.</small></div></section>
+</main><script src="assets/app.js"></script></body></html>
