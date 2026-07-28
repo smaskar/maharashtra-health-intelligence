@@ -1,44 +1,41 @@
 {
-  "generated_at": "2026-07-28T14:30:00+05:30",
-  "summary": [
-    {"label":"Overall State Status","value":"WATCH","status":"Medium","note":"No verified statewide system failure; district-level alerts require follow-up."},
-    {"label":"Significant Alerts","value":"3","status":"High","note":"Amravati food safety, Satara road access, Thane hospital staff safety."},
-    {"label":"102 / 104 / 108","value":"OPERATIONAL","status":"Operational","note":"No verified statewide disruption identified."},
-    {"label":"Digital Health","value":"STABLE","status":"Operational","note":"No verified statewide outage trend identified."}
+  "period":"LAST 24 HOURS UPDATE – 28 JULY 2026, CURRENT MONITORING WINDOW",
+  "kpis":[
+    {"label":"DISTRICT HOSPITALS","value":"36","status":"MONITORING","note":"No verified statewide disruption"},
+    {"label":"SUB-DISTRICT / RURAL HOSPITALS","value":"22","status":"MONITORING","note":"District inputs awaited"},
+    {"label":"PHCs / UPHCs / CHCs / HWCs","value":"58","status":"MONITORING","note":"No major statewide issue verified"},
+    {"label":"108 EMERGENCY AMBULANCE","value":"OPERATIONAL","status":"OPERATIONAL","note":"Satara local route watch"},
+    {"label":"104 HEALTH HELPLINE","value":"OPERATIONAL","status":"OPERATIONAL","note":"No major disruption verified"},
+    {"label":"102 MATERNAL TRANSPORT","value":"OPERATIONAL","status":"OPERATIONAL","note":"No major disruption verified"}
   ],
-  "alerts": [
-    {"district":"Amravati","title":"Melghat ashram-school food poisoning","severity":"Critical","verification":"Credible Report","category":"Operational Risk / Patient Safety","trend":"Escalating","published_at":"Recent monitoring","summary":"Multi-school food-poisoning cluster in Dharni taluka; central kitchen reportedly closed and police action initiated. Exact patient count and laboratory findings require official consolidation.","source_url":"https://www.google.com/search?q=Melghat+ashram+school+food+poisoning+July+2026"},
-    {"district":"Satara","title":"Kelghar Ghat landslide affects Satara–Mahabaleshwar access","severity":"High","verification":"Credible Report","category":"Operational Risk / Disaster Access","trend":"Increasing","published_at":"Recent monitoring","summary":"Road closure may delay ambulance movement, referrals, staff travel and medicine or oxygen logistics for Mahabaleshwar–Jawali facilities.","source_url":"https://www.google.com/search?q=Satara+Mahabaleshwar+Kelghar+Ghat+landslide+July+2026"},
-    {"district":"Thane","title":"Hospital assault investigation under judicial scrutiny","severity":"High","verification":"Credible Report","category":"Reputation Risk / Staff Safety","trend":"Escalating","published_at":"Recent monitoring","summary":"Bombay High Court reportedly criticised investigation handling in the Dombivli hospital assault case and transferred the probe to a senior police officer.","source_url":"https://www.google.com/search?q=Dombivli+Shastrinagar+hospital+assault+Bombay+High+Court+July+2026"}
+  "districts":[
+    {"district":"Amravati","risk":"Critical","issue":"Melghat ashram-school food poisoning; central kitchen closed; investigation continuing","trend":"↑"},
+    {"district":"Satara","risk":"High","issue":"Kelghar Ghat landslide; Satara–Mahabaleshwar access and ambulance logistics affected","trend":"↑"},
+    {"district":"Thane","risk":"High","issue":"Dombivli hospital assault investigation and healthcare-worker safety scrutiny","trend":"↑"},
+    {"district":"Pune","risk":"Medium","issue":"Aundh District Hospital corrective-action and infrastructure watch","trend":"→"},
+    {"district":"Mumbai","risk":"Medium","issue":"SevenHills Hospital infrastructure / PPP development watch","trend":"→"},
+    {"district":"Raigad","risk":"Medium","issue":"Heavy-rain and local access monitoring","trend":"→"},
+    {"district":"Ratnagiri","risk":"Medium","issue":"Heavy-rain and low-lying-area watch","trend":"→"},
+    {"district":"Nandurbar","risk":"Low","issue":"Tribal-hostel food-safety recurrence monitoring","trend":"→"},
+    {"district":"Nagpur","risk":"Low","issue":"No significant verified signal","trend":"↓"},
+    {"district":"Nashik","risk":"Low","issue":"No significant verified signal","trend":"→"}
   ],
-  "district_risks": [
-    {"district":"Amravati","risk":"Critical","trend":"↑","issue":"Food-poisoning cluster and institutional food-safety controls"},
-    {"district":"Satara","risk":"High","trend":"↑","issue":"Road closure affecting emergency access and supplies"},
-    {"district":"Thane","risk":"High","trend":"↑","issue":"Hospital staff safety and medico-legal scrutiny"},
-    {"district":"Pune","risk":"Medium","trend":"→","issue":"Aundh District Hospital corrective-action watch"},
-    {"district":"Mumbai","risk":"Medium","trend":"→","issue":"Large hospital infrastructure / PPP developments"}
+  "alerts":[
+    {"district":"Amravati (Melghat)","title":"Food Poisoning Cluster","severity":"Critical","summary":"Ashram-school food-poisoning cluster; Tembhli central kitchen reportedly closed and police action initiated.","action":"Consolidate patient line list, laboratory reports, supplier compliance and preventive inspections.","source":"Marathi media / public reports","time":"Current monitoring"},
+    {"district":"Satara","title":"Kelghar Ghat Landslide","severity":"High","summary":"Satara–Mahabaleshwar road access affected; ambulance referrals, staff movement and essential supplies may face delay.","action":"Activate alternate routes, stage ambulances and confirm fuel, oxygen and medicine readiness.","source":"Public reports","time":"Current monitoring"},
+    {"district":"Thane (Dombivli)","title":"Hospital Assault Case","severity":"High","summary":"Hospital staff-safety incident remains under judicial and police scrutiny.","action":"Review security, CCTV retention, visitor control and emergency police-response SOPs.","source":"English and Marathi media","time":"Current monitoring"}
   ],
-  "services": [
-    {"name":"102 Maternal & Child Transport","status":"Operational","note":"No material statewide disruption verified."},
-    {"name":"104 Health Helpline","status":"Operational","note":"No material statewide disruption verified."},
-    {"name":"108 Emergency Ambulance","status":"Operational","note":"Monitor local access constraints in Satara."},
-    {"name":"e-Aushadhi","status":"Operational","note":"No verified statewide outage trend."},
-    {"name":"e-Shushrut / HMIS","status":"Operational","note":"No verified statewide outage trend."},
-    {"name":"e-Sanjeevani / ABDM","status":"Operational","note":"No verified statewide outage trend."}
+  "midPanels":[
+    {"title":"DISEASE OUTBREAKS","rows":[{"label":"Food poisoning – Amravati","status":"Active cluster"},{"label":"Other outbreaks","status":"No verified statewide signal"}]},
+    {"title":"WEATHER & DISASTER IMPACT","rows":[{"label":"Satara – Kelghar Ghat","status":"Road access risk"},{"label":"Raigad / Ratnagiri","status":"Heavy-rain watch"}]},
+    {"title":"MEDICINE & EQUIPMENT STATUS","rows":[{"label":"Critical medicine shortage","status":"Not verified"},{"label":"Major equipment downtime","status":"Not verified"}]},
+    {"title":"HR STATUS","rows":[{"label":"Doctors","status":"No statewide shortage verified"},{"label":"Nursing / paramedical","status":"Monitor locally"}]},
+    {"title":"102 / 104 / 108 STATUS","rows":[{"label":"102 Maternal Transport","status":"Operational"},{"label":"104 Health Helpline","status":"Operational"},{"label":"108 Emergency Ambulance","status":"Operational"}]}
   ],
-  "facility_watch": [
-    {"facility":"District Hospital Aundh","district":"Pune","issue":"Carry-forward concerns involving critical services, equipment and infrastructure.","action":"Obtain current corrective-action status and verify ICU, SNCU, dialysis and mortuary functionality."},
-    {"facility":"Public hospitals in Mahabaleshwar–Jawali belt","district":"Satara","issue":"Road access constraint may affect referrals and supply chains.","action":"Confirm alternate routes, ambulance staging, fuel, oxygen, medicine and generator readiness."}
-  ],
-  "opportunities": [
-    {"title":"Public hospital star-rating framework","detail":"Opportunity to integrate auditable quality indicators, patient feedback, medicine availability and equipment uptime."},
-    {"title":"Marathi-first district intelligence","detail":"Expand verified district-source coverage and convert repeated issues into a state command-centre heat map."}
-  ],
-  "actions": [
-    "Seek a consolidated official report on the Melghat food-poisoning cluster, laboratory findings and preventive inspections.",
-    "Confirm Satara ambulance diversion and referral plans until the Satara–Mahabaleshwar route is fully restored.",
-    "Review hospital staff-safety SOPs, CCTV retention, visitor control and police-response protocols after the Dombivli case.",
-    "Obtain the latest corrective-action compliance report for Aundh District Hospital.",
-    "Continue 24-hour Marathi-first monitoring and validate critical reports before executive circulation."
-  ]
+  "tenders":["District-level medical-equipment tenders under monitoring","Hospital renovation and diagnostic procurement opportunities","Verify all tender notices against official portals before circulation"],
+  "funding":["PM-ABHIM digital-health and infrastructure opportunities","AB-PMJAY infrastructure support opportunities","NCD and public-health strengthening windows"],
+  "positive":["Maha Arogya Shibir and health-camp activity across districts","Specialist OPDs, screening and blood-donation initiatives","Opportunity to integrate public-hospital star-rating indicators"],
+  "topics":["Food safety","Hospital staff safety","Road closure and ambulance access","Health camps and services"],
+  "sentiment":{"positive":62,"neutral":26,"negative":12},
+  "actions":["Review Melghat food-poisoning investigation and prevention","Confirm Satara diversion routes and referral continuity","Review hospital staff-safety SOPs after Dombivli case","Obtain Aundh Hospital corrective-action status","Ensure uninterrupted 102, 104 and 108 during monsoon"]
 }
